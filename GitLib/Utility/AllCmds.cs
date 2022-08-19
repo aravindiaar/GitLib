@@ -13,7 +13,7 @@ namespace GitLib.Utility
         public static string ALL_AUTHOR_ONLY_EMAIL = "git log --pretty='%ae' | sort | uniq";
         public static string ALL_AUTHOR = "git log --pretty='%an %ae%n%cn %ce' | sort | uniq";
         public static string DATE_FORMAT = " --date=format:'%Y-%m-%d %H:%M:%S'";
-        public static int TIME_INTERVAL = 30;
+        public static int TIME_INTERVAL = 10;
         public static string Bash = @"C:\Program Files\Git\bin\bash.exe";
 
     }

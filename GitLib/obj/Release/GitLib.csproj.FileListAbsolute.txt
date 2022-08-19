@@ -1,0 +1,6 @@
+E:\GitCode\GitLib\GitLib\bin\Release\GitLib.dll.config
+E:\GitCode\GitLib\GitLib\bin\Release\GitLib.dll
+E:\GitCode\GitLib\GitLib\bin\Release\GitLib.pdb
+E:\GitCode\GitLib\GitLib\obj\Release\GitLib.csproj.CoreCompileInputs.cache
+E:\GitCode\GitLib\GitLib\obj\Release\GitLib.dll
+E:\GitCode\GitLib\GitLib\obj\Release\GitLib.pdb

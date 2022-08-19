@@ -1,20 +1,17 @@
-﻿using System;
+﻿using GitLib.Utility;
+using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GitLib.Utility;
 
 namespace GitLib
 {
-    class Program
+   public class InvokeGit
     {
-        public static void Main(string[] args)
+        public int Score(string workspace)
         {
-            string workspace = @"E:\Gitlib\libgit2";
             var Authors = Utility.BashProcess.GET_AUTHOR(workspace, AllCmds.ALL_AUTHOR_ONLY_EMAIL);
-
             int tnt = 0;
             int score = 0;
             foreach (var item in Authors)
@@ -28,7 +25,7 @@ namespace GitLib
                 }
             }
             int SCORE_OUT = (int)Math.Round((double)(score) / tnt);
-            int xx =Convert.ToInt32(SCORE_OUT * .1);
+            return Convert.ToInt32(SCORE_OUT * .1);
         }
     }
 }
