@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace GitLib
@@ -16,6 +17,11 @@ namespace GitLib
             int score = 0;
             foreach (var item in Authors)
             {
+                bool isEmail = Regex.IsMatch(item, AllCmds.EMAIL_REGX, RegexOptions.IgnoreCase);
+                if (!isEmail)
+                {
+                    continue;
+                }
                 var Author_Date_Commits = Utility.BashProcess.GET_AUTHOR_LOG(workspace, AllCmds.AUTHOR_LOG, item);
                 if (Author_Date_Commits.Count > 1)
                 {

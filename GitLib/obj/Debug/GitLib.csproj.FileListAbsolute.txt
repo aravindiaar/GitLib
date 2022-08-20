@@ -11,3 +11,10 @@ E:\GitCode\GitLib\GitLib\obj\Debug\GitLib.pdb
 E:\GitCode\GitLib\GitLib\bin\Debug\GitLib.dll.config
 E:\GitCode\GitLib\GitLib\bin\Debug\GitLib.dll
 E:\GitCode\GitLib\GitLib\obj\Debug\GitLib.dll
+D:\HRMS-19\GitLibScore\GitLib\bin\Debug\GitLib.pdb
+D:\HRMS-19\GitLibScore\GitLib\obj\Debug\GitLib.csproj.AssemblyReference.cache
+D:\HRMS-19\GitLibScore\GitLib\obj\Debug\GitLib.csproj.CoreCompileInputs.cache
+D:\HRMS-19\GitLibScore\GitLib\obj\Debug\GitLib.pdb
+D:\HRMS-19\GitLibScore\GitLib\bin\Debug\GitLib.exe.config
+D:\HRMS-19\GitLibScore\GitLib\bin\Debug\GitLib.exe
+D:\HRMS-19\GitLibScore\GitLib\obj\Debug\GitLib.exe

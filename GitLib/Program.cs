@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using GitLib.Utility;
 
@@ -12,13 +13,18 @@ namespace GitLib
     {
         public static void Main(string[] args)
         {
-            string workspace = @"E:\Gitlib\libgit2";
+            string workspace = @"D:\HRMS-19\DSRC_HRMS";
             var Authors = Utility.BashProcess.GET_AUTHOR(workspace, AllCmds.ALL_AUTHOR_ONLY_EMAIL);
 
             int tnt = 0;
             int score = 0;
             foreach (var item in Authors)
             {
+                bool isEmail = Regex.IsMatch(item, AllCmds.EMAIL_REGX, RegexOptions.IgnoreCase);
+                if (!isEmail)
+                {
+                    continue;
+                }
                 var Author_Date_Commits = Utility.BashProcess.GET_AUTHOR_LOG(workspace, AllCmds.AUTHOR_LOG, item);
                 if (Author_Date_Commits.Count > 1)
                 {

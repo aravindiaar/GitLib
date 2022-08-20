@@ -29,9 +29,14 @@ namespace GitLib.Utility
             {
                 if (item.Contains("Date:"))
                 {
-                    string d = item.Replace("Date:", "").Trim();
-                    DateTime dt = Convert.ToDateTime(d);
-                    ob.Add(dt);
+                    try
+                    {
+                        string d = item.Replace("Date:", "").Trim();
+                        DateTime dt = Convert.ToDateTime(d);
+                        ob.Add(dt);
+                    }
+                    catch (Exception ex)
+                    { }
                 }
             }
             return ob;

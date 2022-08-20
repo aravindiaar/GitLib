@@ -15,6 +15,7 @@ namespace GitLib.Utility
         public static string DATE_FORMAT = " --date=format:'%Y-%m-%d %H:%M:%S'";
         public static int TIME_INTERVAL = 10;
         public static string Bash = @"C:\Program Files\Git\bin\bash.exe";
+        public static string EMAIL_REGX = @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z";
 
     }
 }
